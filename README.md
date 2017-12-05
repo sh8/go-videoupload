@@ -1,5 +1,6 @@
 # go-videoupload
-Easy video uploader for golang
+Easy video uploader for golang  
+[![GoDoc](https://godoc.org/github.com/golang/gddo?status.svg)](https://godoc.org/github.com/sh8/go-videoupload)
 
 # Thanks
 This library is inspired by [olahol/go-imageupload](https://github.com/olahol/go-imageupload)
