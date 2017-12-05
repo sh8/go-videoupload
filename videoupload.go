@@ -23,7 +23,7 @@ func (v *Video) Save(filename string) error {
 }
 
 // Get hash sum for creating unique file name
-func (v *Video) getHashSum() string {
+func (v *Video) GetHashSum() string {
 	h := sha1.Sum(v.Data)
 	return fmt.Sprintf("%s", h[:4])
 }
