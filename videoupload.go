@@ -19,7 +19,7 @@ type Video struct {
 
 // Save video file with permission 0600
 func (v *Video) Save(filename string) error {
-	return ioutil.WriteFile(filename, i.Data, 0600)
+	return ioutil.WriteFile(filename, v.Data, 0600)
 }
 
 // Get hash sum for creating unique file name
@@ -53,12 +53,12 @@ func Process(r *http.Request, field string) (*Video, error) {
 		return nil, err
 	}
 
-	i := &Video{
+	v := &Video{
 		Filename:    info.Filename,
 		ContentType: contentType,
 		Data:        bs,
 		Size:        len(bs),
 	}
 
-	return i, nil
+	return v, nil
 }
