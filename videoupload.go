@@ -2,9 +2,11 @@
 package videoupload
 
 import (
-	"bytes"
 	"crypto/sha1"
+	"errors"
+	"fmt"
 	"io/ioutil"
+	"net/http"
 )
 
 //
@@ -22,7 +24,8 @@ func (v *Video) Save(filename string) error {
 
 // Get hash sum for creating unique file name
 func (v *Video) getHashSum() string {
-	return sha1.Sum(v.Data)
+	h := sha1.Sum(v.Data)
+	return fmt.Sprintf("%s", h[:4])
 }
 
 // Check if the content type is the one of video
