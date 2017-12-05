@@ -4,7 +4,7 @@ package videoupload
 import (
 	"bytes"
 	"crypto/sha1"
-	"ioutil"
+	"io/ioutil"
 )
 
 //

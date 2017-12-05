@@ -12,5 +12,5 @@ $ go get github.com/sh8/go-videoupload
 This library is inspired by [olahol/go-imageupload](https://github.com/olahol/go-imageupload)
 
 # LICENSE
-This library is under the [MIT License](http://opensource.org/licenses/MIT)
+This library is under the [MIT License](http://opensource.org/licenses/MIT)  
 Copyright © 2017, Shun Iwase
